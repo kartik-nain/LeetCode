@@ -17,11 +17,13 @@ class Solution {
             }
         }
         
-        return right;
+        return right; //Returning right, beacuse we want to round down, not round up
     }
 }
 // Visual Run x = 8
 // X   Left  Right  Mid  compare  X/Mid
 // 8     0    8      4       >       2
-// 8     0    3      1       <       4
-// 8     2    3      2       >       2 Returned mid
+// 8     0    3      1       <       8
+// 8     2    3      2       <       4
+// 8     3    3      3       >       2
+// 8     3    2      Stopped here because right < left
