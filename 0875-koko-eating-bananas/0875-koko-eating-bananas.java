@@ -26,6 +26,6 @@ class Solution {
             }
         }
         
-        return left;
+        return left; //Returning left here because in Input: piles = [3,6,7,11], h = 8; k=4 and 5 give same answer but left variable 4 is preferred because we have to return minimum integer k
     }
 }
