@@ -11,7 +11,7 @@ class Solution {
                 return mid;
             }
             
-            if(nums[left]<=nums[mid]){ //This means that the left half is sorted
+            if(nums[left]<=nums[mid]){ //This means that the left half is sorted; = is needed for testcase[3,1], 1
                 if(nums[left]<=target && target<nums[mid]){ //Checking if the target lies in this half
                     right = mid - 1;
                 }else{
